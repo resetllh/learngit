@@ -34,3 +34,8 @@ git branch -M master 重命名当前分支
 git push -u origin master
 
 git clone git@github.com:resetllh/gitskills.git
+
+git branch dev
+git checkout dev
+git checkout -b dev
+git branch 看当前分支
