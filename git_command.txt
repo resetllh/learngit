@@ -22,3 +22,13 @@ git commit -m "remove"
 
 rm readme.txt
 git restore readme.txt
+
+ssh-keygen -t rsa -C "youremail@example.com"
+isa.pub填入github ssh setting中
+ssh -T git@github.com检测是否成功连接，wsl不能，其他能
+github新建仓库，command line 调用
+git remote add origin git@github.com:resetllh/learngit.git
+git remote -v 可以查看
+git branch -M master 重命名当前分支
+git push -u origin master
+
