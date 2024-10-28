@@ -39,3 +39,6 @@ git branch dev
 git checkout dev
 git checkout -b dev
 git branch 看当前分支
+git checkout master
+git merge dev
+git branch -d dev
