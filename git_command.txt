@@ -13,4 +13,5 @@ git reset --hard HEAD~1
 git reset --hard id
 git reflog
 git restore readme.txt
-git restore --stage readme.txt
+git restore --stage readme.txt 后
+git restore readme.txt
