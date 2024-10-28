@@ -15,3 +15,10 @@ git reflog
 git restore readme.txt
 git restore --stage readme.txt 后
 git restore readme.txt
+
+rm readme.txt
+git add readme.txt or git rm readme.txt
+git commit -m "remove"
+
+rm readme.txt
+git restore readme.txt
