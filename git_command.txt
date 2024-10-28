@@ -1,0 +1,16 @@
+git config --global user.name "Your name"
+git config --global user.email "email.@example.com"
+
+git init
+git add readme.txt
+git commit -m "wrote a readme file"
+git status
+git diff readme.txt
+git log
+git log --pretty=oneline
+git reset --hard HEAD^
+git reset --hard HEAD~1
+git reset --hard id
+git reflog
+git restore readme.txt
+git restore --stage readme.txt
