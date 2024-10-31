@@ -46,3 +46,5 @@ git branch -d dev
 
 git log --graph --pretty=oneline --abbrev-commit
 git merge --no-ff -m "merge with no-ff" dev
+
+git statsh 储存当前工作现场。
