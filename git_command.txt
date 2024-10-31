@@ -52,3 +52,5 @@ git stash apply
 git stash apply stash@{0}
 git stash drop
 git stash pop
+
+git cherry-pick commit[id]
