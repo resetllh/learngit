@@ -59,6 +59,7 @@ git stash drop
 git stash pop
 
 git cherry-pick commit[id]
+<<<<<<< HEAD
 git branch -D filename #强行删除
 
 git remote
@@ -82,3 +83,21 @@ git rebase #好看
 #pull request，为别人做贡献
 #自定义git，配置命令别名，搭建git服务器，使用GUI，略
 .ignore #可以忽略一些文件
+=======
+
+git branch -D filename 强行删除
+
+git remote
+git remote -v
+git push origin master 将master的commit推送，
+可改为dev，则在origin创建dev分支，并推送
+
+git clone git@github.com:michaelliao/learngit.git
+git branch 只有master
+git checkout -b dev origin/dev 和远程dev相对应
+git push origin dev
+
+git pull
+git branch --set-upstream-to=origin/<branch> dev
+git pull
+>>>>>>> cb091b4079af38b96b043ba94b4f09089dd71214
