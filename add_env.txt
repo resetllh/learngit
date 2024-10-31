@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 nothing
 everything
-=======
-everything!
->>>>>>> 02acebfc7a10f02d8a871569e1f1bd3c28b2c4cc
