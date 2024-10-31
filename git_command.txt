@@ -54,3 +54,9 @@ git stash drop
 git stash pop
 
 git cherry-pick commit[id]
+git branch -D filename 强行删除
+
+git remote
+git remote -v
+git push origin master 将master的commit推送，
+可改为dev，则在origin创建dev分支，并推送
