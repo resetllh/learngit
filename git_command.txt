@@ -4,44 +4,48 @@ git config --global user.email "email.@example.com"
 git init
 git add readme.txt
 git commit -m "wrote a readme file"
+
 git status
-git diff readme.txt
+git diff readme.txt #比较暂存区和工作区
+
 git log
 git log --pretty=oneline
 git reset --hard HEAD^
 git reset --hard HEAD~1
 git reset --hard id
 git reflog
-git restore readme.txt
-git restore --stage readme.txt 后
-git restore readme.txt
+
+git restore readme.txt #撤销
+git restore --stage readme.txt #从暂存区拿出
+git restore readme.txt #撤销
 
 rm readme.txt
 git add readme.txt or git rm readme.txt
 git commit -m "remove"
-
 rm readme.txt
 git restore readme.txt
 
 ssh-keygen -t rsa -C "youremail@example.com"
-isa.pub填入github ssh setting中
-ssh -T git@github.com检测是否成功连接，wsl不能，其他能
-github新建仓库，command line 调用
+#isa.pub填入github ssh setting中
+ssh -T git@github.com #检测是否成功连接，wsl不能，其他能
+#github新建仓库，command line 调用
 git remote add origin git@github.com:resetllh/learngit.git
-git remote -v 可以查看
-git remote rm origin 删除
-git branch -M master 重命名当前分支
+git remote -v #可以查看
+git remote rm origin #删除
+git branch -M master #重命名当前分支
 git push -u origin master
+git push origin master
 
 git clone git@github.com:resetllh/gitskills.git
 
 git branch dev
 git checkout dev
 git checkout -b dev
-git branch 看当前分支
+git branch #看当前分支
 git checkout master
 git merge dev
-merge出现冲突，要手动解决，之后 add commit
+#merge出现冲突，要手动解决，之后 add commit
+git merge --no-ff -m "comment" dev #可以看出合并的过程
 git branch -d dev
 
 git log --graph --pretty=oneline --abbrev-commit
@@ -54,9 +58,26 @@ git stash drop
 git stash pop
 
 git cherry-pick commit[id]
-git branch -D filename 强行删除
+git branch -D filename #强行删除
 
 git remote
 git remote -v
-git push origin master 将master的commit推送，
-可改为dev，则在origin创建dev分支，并推送
+git push origin master #将master的commit推送，
+git push origin dev #在origin创建dev分支，并推送
+
+git clone git@github.com:michaelliao/learngit.git
+git branch
+git checkout -b dev origin/dev #创建分支相对应
+
+git pull
+git branch --set-upstream-to=origin/dev dev
+git pull
+#git add commit
+git push orgin dev
+
+git rebase #好看
+#标签相关，略
+#Github中，fork别人的仓库到自己的远端仓库，再克隆到本地进行修改
+#pull request，为别人做贡献
+#自定义git，配置命令别名，搭建git服务器，使用GUI，略
+.ignore #可以忽略一些文件
