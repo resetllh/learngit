@@ -45,3 +45,10 @@ merge出现冲突，要手动解决，之后 add commit
 git branch -d dev
 
 git log --graph --pretty=oneline --abbrev-commit
+
+git stash
+git stash list
+git stash apply
+git stash apply stash@{0}
+git stash drop
+git stash pop
